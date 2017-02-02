@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-01-27 10:29:21
+/* Smarty version 3.1.30, created on 2017-02-02 09:47:17
   from "C:\xampp\htdocs\smarty_board\templates\delete.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_588b12f1988471_03901987',
+  'unifunc' => 'content_5892f2156566c1_04152933',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8f0a65168dbad40d4076bfdb17b76548145eeb99' => 
     array (
       0 => 'C:\\xampp\\htdocs\\smarty_board\\templates\\delete.tpl',
-      1 => 1485505747,
+      1 => 1486025234,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_588b12f1988471_03901987 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5892f2156566c1_04152933 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html>
@@ -31,7 +31,7 @@ function content_588b12f1988471_03901987 (Smarty_Internal_Template $_smarty_tpl)
 <body>
 <h1>掲示板 削除</h1>
 
-<p>ユーザ名：<u><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['usr_name']->value, ENT_QUOTES, 'UTF-8', true);?>
+<p>ユーザ名：<u><?php echo $_smarty_tpl->tpl_vars['usr_name']->value;?>
 </u></p>
 <ul>
     <li><a href="logout_smarty.php">ログアウト</a></li>
@@ -48,6 +48,7 @@ function content_588b12f1988471_03901987 (Smarty_Internal_Template $_smarty_tpl)
     <p>
         <input type = "submit" id="delete" name="delete" value = "削除" />
     </p>
+
     <p style = "color:red"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['errorMsg']->value, ENT_QUOTES, 'UTF-8', true);?>
 </p>
     <p style = "color:blue"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['resultMsg']->value, ENT_QUOTES, 'UTF-8', true);?>
