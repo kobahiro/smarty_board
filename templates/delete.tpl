@@ -23,6 +23,7 @@
     <p>
         <input type = "submit" id="delete" name="delete" value = "削除" />
     </p>
+
     <p style = "color:red">{$errorMsg|escape:"html"}</p>
     <p style = "color:blue">{$resultMsg|escape:"html"}</p>
     <table border = "1">
